@@ -1,10 +1,10 @@
 import React from "react";
 import "./Hero.css";
 
-const Hero = () => {
+const Hero = ({ id }) => {
   return (
     <>
-      <section className="hero-container">
+      <section id={id} className="hero-container">
         <div className="hero-content">
           <h2>Buinding Digital Experiences That Inspire</h2>
           <p>

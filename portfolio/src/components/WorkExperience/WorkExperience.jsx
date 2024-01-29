@@ -3,7 +3,7 @@ import "./WorkExperience.css";
 import { WORK_EXPERIENCE } from "../../utils/data";
 import ExperienceCard from "./ExperienceCard/ExperienceCard";
 import Slider from "react-slick";
-const WorkExperience = () => {
+const WorkExperience = ({ id }) => {
   const sliderRef = useRef();
   const settigs = {
     dots: false,
@@ -30,7 +30,7 @@ const WorkExperience = () => {
   };
 
   return (
-    <section className="experience-container">
+    <section id={id} className="experience-container">
       <h5>Work Experience</h5>
       <div className="experince-content">
         <div className="arrow-right" onClick={slideLeft}>

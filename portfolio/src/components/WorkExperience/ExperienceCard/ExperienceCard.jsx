@@ -2,10 +2,20 @@ import React from "react";
 import "./ExperienceCard.css";
 
 const ExperienceCard = ({ details }) => {
+  // Функция для открытия ссылки
+  const openLink = () => {
+    if (details.date) {
+      window.open(details.date, "_blank");
+    }
+  };
+
   return (
     <div className="work-experience-card">
       <h6>{details.title}</h6>
-      <div className="work-duration">{details.date}</div>
+      {/* Добавление обработчика onClick к div */}
+      <div className="work-duration" onClick={openLink}>
+        Go to source code
+      </div>
       <ul>
         {details.responsibilities.map((item) => (
           <li key={item}>{item}</li>
@@ -14,4 +24,5 @@ const ExperienceCard = ({ details }) => {
     </div>
   );
 };
+
 export default ExperienceCard;

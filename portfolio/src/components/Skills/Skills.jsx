@@ -4,7 +4,7 @@ import { SKILLS } from "../../utils/data";
 import SkillsCard from "./SkillsCard/SkillsCard";
 import SkillsInfoCard from "./SkillsCard/SkillsInfoCard/SkillsInfoCard";
 
-export default function Skills() {
+export default function Skills({ id }) {
   const [selectedSkil, setSelectedSkill] = useState(SKILLS[0]);
   const handleSelectSkill = (data) => {
     setSelectedSkill(data);
@@ -12,7 +12,7 @@ export default function Skills() {
 
   return (
     <>
-      <section className="skills-container">
+      <section id={id} className="skills-container">
         <h5>Technical Proficiency</h5>
         <div className="skills-content">
           <div className="skills">

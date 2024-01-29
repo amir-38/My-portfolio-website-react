@@ -39,28 +39,27 @@ export const SKILLS = [
 
 export const WORK_EXPERIENCE = [
   {
-    title: "Senior front end developer",
-    date: "2022 januart-present",
+    title: "Web Application Project 'EdVentureAI'",
+    date: "https://www.youtube.com/",
     responsibilities: [
-      "material-symbols-outlined material-symbols-outlined material-symbols-outlined material-symbols-outlined material-symbols-outlined material-symbols-outlined",
-      "lorem sdkjd cdsak dss dsdjd sdsd dsd d d dsds dsadsdasdasd dsasdasadsadas",
-      "lorem sdkjd cdsak dss dsdjd sdsd dsd d d dsds dsadsdasdasd dsasdasadsadas",
-      "lorem sdkjd cdsak dss dsdjd sdsd dsd d d dsds dsadsdasdasd dsasdasadsadas",
+      "Leveraging the power of Python for backend development, this web application utilizes sophisticated algorithms to assist students in identifying their ideal career paths.",
+      "Built with React.js, the front-end delivers a seamless and interactive user experience, perfectly complementing the intelligent Python-driven backend.",
+      "The application's design is meticulously crafted using HTML and CSS, ensuring a responsive and visually appealing interface tailored for student engagement.",
+      "Integrating various APIs for comprehensive data analysis and utilizing Node.js for scalable server-side operations, the application provides reliable and efficient career guidance based on AI-driven insights.",
     ],
   },
   {
-    title: "Junior front end developer",
-    date: "2021 januart-2022february",
+    title: "React Portfolio Website",
+    date: "https://www.youtube.com/",
     responsibilities: [
-      "lorem sdkjd cdsak dss dsdjd sdsd dsd d d dsds dsadsdasdasd dsasdasadsadas",
-      "lorem sdkjd cdsak dss dsdjd sdsd dsd d d dsds dsadsdasdasd dsasdasadsadas",
-      "lorem sdkjd cdsak dss dsdjd sdsd dsd d d dsds dsadsdasdasd dsasdasadsadas",
-      "lorem sdkjd cdsak dss dsdjd sdsd dsd d d dsds dsadsdasdasd dsasdasadsadas",
+      "I have implemented advanced front-end features using React.js, leveraging its component-based architecture to create efficient and interactive user interfaces.",
+      "My projects consistently demonstrate a strong command of HTML and CSS, ensuring structured, accessible, and visually appealing web layouts.",
+      "With a focus on responsive design, I utilize CSS and React.js to ensure that my websites are visually compelling and function seamlessly across all devices.",
     ],
   },
   {
     title: "Inteern front end developer",
-    date: "2020 januart-2021february",
+    date: "https://www.youtube.com/",
     responsibilities: [
       "lorem sdkjd cdsak dss dsdjd sdsd dsd d d dsds dsadsdasdasd dsasdasadsadas",
       "lorem sdkjd cdsak dss dsdjd sdsd dsd d d dsds dsadsdasdasd dsasdasadsadas",

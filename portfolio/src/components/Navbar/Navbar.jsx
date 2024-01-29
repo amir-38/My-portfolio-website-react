@@ -4,8 +4,40 @@ import MobileNav from "./MobileNav/MobileNav";
 
 const Navbar = () => {
   const [openMenu, setOpenMenu] = useState(false);
+
   const toggleMenu = () => {
     setOpenMenu(!openMenu);
+  };
+
+  const smoothScrollTo = (targetY, duration) => {
+    const startingY = window.pageYOffset;
+    const diff = targetY - startingY;
+    let start;
+
+    const step = (timestamp) => {
+      if (!start) start = timestamp;
+      const time = timestamp - start;
+      let percent = Math.min(time / duration, 1);
+
+      window.scrollTo(0, startingY + diff * percent);
+
+      if (time < duration) {
+        window.requestAnimationFrame(step);
+      }
+    };
+
+    window.requestAnimationFrame(step);
+  };
+
+  const scrollToSection = (sectionId) => () => {
+    const section = document.getElementById(sectionId);
+    const navbarHeight = 120;
+
+    if (section) {
+      const sectionTop =
+        section.getBoundingClientRect().top + window.pageYOffset - navbarHeight;
+      smoothScrollTo(sectionTop, 500);
+    }
   };
 
   return (
@@ -13,23 +45,35 @@ const Navbar = () => {
       <MobileNav isOpen={openMenu} toggleMenu={toggleMenu} />
       <nav className="nav-wrapper">
         <div className="nav-content">
-          <img className="logo" src="../public/assets/technology.png" alt="" />
+          <img
+            className="logo"
+            src="../public/assets/technology.png"
+            alt="logo"
+          />
 
           <ul>
             <li>
-              <a className="menu-item">Home</a>
+              <a onClick={scrollToSection("home")} className="menu-item">
+                Home
+              </a>
             </li>
             <li>
-              <a className="menu-item">Skils</a>
+              <a onClick={scrollToSection("skills")} className="menu-item">
+                Skills
+              </a>
             </li>
             <li>
-              <a className="menu-item">Work experience</a>
+              <a onClick={scrollToSection("projects")} className="menu-item">
+                My Projects
+              </a>
             </li>
             <li>
-              <a className="menu-item">Contact me</a>
+              <a onClick={scrollToSection("contact")} className="menu-item">
+                Contact Me
+              </a>
             </li>
             <button className="contact-btn" onClick={() => {}}>
-              HIre me
+              Hire Me
             </button>
           </ul>
           <button className="menu-btn" onClick={toggleMenu}>
@@ -45,4 +89,5 @@ const Navbar = () => {
     </>
   );
 };
+
 export default Navbar;
