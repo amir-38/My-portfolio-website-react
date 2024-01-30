@@ -33,10 +33,10 @@ const WorkExperience = ({ id }) => {
     <section id={id} className="experience-container">
       <h5>Work Experience</h5>
       <div className="experince-content">
-        <div className="arrow-right" onClick={slideLeft}>
+        <div className="arrow-right" onClick={slideRight}>
           <span className="material-symbols-outlined">chevron_right</span>
         </div>
-        <div className="arrow-left" onClick={slideRight}>
+        <div className="arrow-left" onClick={slideLeft}>
           <span className="material-symbols-outlined">chevron_left</span>
         </div>
         <Slider ref={sliderRef} {...settigs}>

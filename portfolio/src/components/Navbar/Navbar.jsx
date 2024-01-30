@@ -45,11 +45,7 @@ const Navbar = () => {
       <MobileNav isOpen={openMenu} toggleMenu={toggleMenu} />
       <nav className="nav-wrapper">
         <div className="nav-content">
-          <img
-            className="logo"
-            src="../public/assets/technology.png"
-            alt="logo"
-          />
+          <img className="logo" src="../public/assets/logo.png" alt="logo" />
 
           <ul>
             <li>
@@ -64,17 +60,23 @@ const Navbar = () => {
             </li>
             <li>
               <a onClick={scrollToSection("projects")} className="menu-item">
-                My Projects
+                Projects
               </a>
             </li>
             <li>
               <a onClick={scrollToSection("contact")} className="menu-item">
-                Contact Me
+                Contact
               </a>
             </li>
-            <button className="contact-btn" onClick={() => {}}>
-              Hire Me
-            </button>
+            <a
+              href="../public/assets/Amir's Resume.pdf"
+              className="download-link"
+              download
+            >
+              <button className="contact-btn" onClick={() => {}}>
+                Download CV
+              </button>
+            </a>
           </ul>
           <button className="menu-btn" onClick={toggleMenu}>
             <span

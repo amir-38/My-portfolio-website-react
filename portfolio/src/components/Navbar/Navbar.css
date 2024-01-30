@@ -1,3 +1,8 @@
+
+.download-link{
+   text-decoration: none;
+}
+
 .nav-wrapper{
    background: rgba(0,0,0,0.1);
    padding: 0.5rem 0;
@@ -15,7 +20,7 @@
    margin: 0 auto;
 }
 .logo{
-   width: 2rem;
+   width: 11rem;
    height: auto;
 }
 .nav-content ul{
@@ -99,7 +104,7 @@
 
 @media(max-width:425px){
    .logo{
-      width: 1.5rem;
+      width: 6rem;
       height: auto;
    }
 }

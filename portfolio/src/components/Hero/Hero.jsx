@@ -6,10 +6,11 @@ const Hero = ({ id }) => {
     <>
       <section id={id} className="hero-container">
         <div className="hero-content">
-          <h2>Buinding Digital Experiences That Inspire</h2>
+          <h2>Welcome, I'm Amir Sarukhanov</h2>
           <p>
-            Passionate Frontend Developer | Transforming Ideas Into Seamles and
-            Visually Stunnig Web Solutions
+            I'am an innovative web developer dedicated to creating inspiring,
+            user-friendly, and intuitively designed digital interfaces that
+            enhance user experience.
           </p>
         </div>
         <div className="hero-img">

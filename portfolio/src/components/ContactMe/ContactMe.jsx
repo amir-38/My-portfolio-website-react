@@ -9,8 +9,14 @@ const ContactMe = ({ id }) => {
       <h5>Contact Me</h5>
       <div className="contact-content">
         <div style={{ flex: 1 }}>
-          <ContactInfoCard iconUrl="./public/assets/icon3.png" text="github" />
-          <ContactInfoCard iconUrl="./public/assets/icon3.png" text="mail" />
+          <ContactInfoCard
+            iconUrl="./public/assets/github.png"
+            text="https://github.com/amir-38"
+          />
+          <ContactInfoCard
+            iconUrl="./public/assets/email.png"
+            text="amir.sarukhanov.dev@gmail.com"
+          />
         </div>
         <div style={{ flex: 1 }}>
           <ContactForm />
