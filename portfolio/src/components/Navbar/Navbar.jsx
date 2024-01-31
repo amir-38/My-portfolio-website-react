@@ -45,7 +45,7 @@ const Navbar = () => {
       <MobileNav isOpen={openMenu} toggleMenu={toggleMenu} />
       <nav className="nav-wrapper">
         <div className="nav-content">
-          <img className="logo" src="../public/assets/logo.png" alt="logo" />
+          <img className="logo" src="./src/assets/logo.png" alt="logo" />
 
           <ul>
             <li>
@@ -69,7 +69,7 @@ const Navbar = () => {
               </a>
             </li>
             <a
-              href="../public/assets/Amir's Resume.pdf"
+              href="./src/assets/Amir's Resume.pdf"
               className="download-link"
               download
             >

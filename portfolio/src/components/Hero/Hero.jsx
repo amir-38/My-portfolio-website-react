@@ -16,20 +16,20 @@ const Hero = ({ id }) => {
         <div className="hero-img">
           <div>
             <div className="tech-icon">
-              <img src="./public/assets/react.png" alt="" />
+              <img src="./src/assets/react.png" alt="" />
             </div>
-            <img src="./public/assets/avatar.png" alt="anime portrait" />
+            <img src="./src/assets/avatar.png" alt="anime portrait" />
           </div>
 
           <div>
             <div className="tech-icon">
-              <img src="./public/assets/css.png" alt="" />
+              <img src="./src/assets/css.png" alt="" />
             </div>
             <div className="tech-icon">
-              <img src="./public/assets/html.png" alt="" />
+              <img src="./src/assets/html.png" alt="" />
             </div>
             <div className="tech-icon">
-              <img src="./public/assets/javascript.png" alt="" />
+              <img src="./src/assets/javascript.png" alt="" />
             </div>
           </div>
         </div>
