@@ -2,7 +2,8 @@ import React from "react";
 import "./ContactMe.css";
 import ContactInfoCard from "./ContactInfoCard/ContactInfoCard";
 import ContactForm from "./ContactForm/ContactForm";
-
+import gitLogo from "../../assets/github.png";
+import mailLogo from "../../assets/email.png";
 const ContactMe = ({ id }) => {
   return (
     <section id={id} className="contact-container">
@@ -10,11 +11,11 @@ const ContactMe = ({ id }) => {
       <div className="contact-content">
         <div style={{ flex: 1 }}>
           <ContactInfoCard
-            iconUrl="./src/assets/github.png"
+            iconUrl={gitLogo}
             text="https://github.com/amir-38"
           />
           <ContactInfoCard
-            iconUrl="./src/assets/email.png"
+            iconUrl={mailLogo}
             text="amir.sarukhanov.dev@gmail.com"
           />
         </div>

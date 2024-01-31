@@ -1,6 +1,10 @@
 import React from "react";
 import "./Hero.css";
-
+import ReactLogo from "../../assets/react.png";
+import AvatarLogo from "../../assets/avatar.png";
+import JSLogo from "../../assets/javascript.png";
+import HtmlLogo from "../../assets/html.png";
+import CssLogo from "../../assets/css.png";
 const Hero = ({ id }) => {
   return (
     <>
@@ -16,20 +20,20 @@ const Hero = ({ id }) => {
         <div className="hero-img">
           <div>
             <div className="tech-icon">
-              <img src="./src/assets/react.png" alt="" />
+              <img src={ReactLogo} alt="" />
             </div>
-            <img src="./src/assets/avatar.png" alt="anime portrait" />
+            <img src={AvatarLogo} alt="anime portrait" />
           </div>
 
           <div>
             <div className="tech-icon">
-              <img src="./src/assets/css.png" alt="" />
+              <img src={CssLogo} alt="" />
             </div>
             <div className="tech-icon">
-              <img src="./src/assets/html.png" alt="" />
+              <img src={HtmlLogo} alt="" />
             </div>
             <div className="tech-icon">
-              <img src="./src/assets/javascript.png" alt="" />
+              <img src={JSLogo} alt="" />
             </div>
           </div>
         </div>

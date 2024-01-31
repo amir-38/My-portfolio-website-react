@@ -11,7 +11,7 @@ function ContactForm() {
 
     try {
       const formData = new FormData(event.target);
-      formData.append("access_key", "  ACCES KEY");
+      formData.append("access_key", "access key");
 
       const object = Object.fromEntries(formData);
       const json = JSON.stringify(object);

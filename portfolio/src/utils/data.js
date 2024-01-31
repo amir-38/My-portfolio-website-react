@@ -1,7 +1,12 @@
+import icon2 from "../assets/icon2.png";
+import server from "../assets/server.png";
+import icon1 from "../assets/icon1.png";
+import searching from "../assets/searching.png";
+
 export const SKILLS = [
   {
     title: "Frontend",
-    icon: "./src/assets/icon2.png",
+    icon: icon2,
     skills: [
       { skill: "HTML5", percentage: "89%" },
       { skill: "CSS3(Sass/SCSS)", percentage: "81%" },
@@ -10,7 +15,7 @@ export const SKILLS = [
   },
   {
     title: "Libraries",
-    icon: "./src/assets/server.png",
+    icon: server,
     skills: [
       { skill: "React.js", percentage: "45%" },
       { skill: "Bootstrap", percentage: "64%" },
@@ -19,7 +24,7 @@ export const SKILLS = [
   },
   {
     title: "Tools",
-    icon: "./src/assets/icon1.png",
+    icon: icon1,
     skills: [
       { skill: "GitHub", percentage: "60%" },
       { skill: "Wisual Studio Code", percentage: "90%" },
@@ -28,7 +33,7 @@ export const SKILLS = [
   },
   {
     title: "Soft Skills",
-    icon: "./src/assets/searching.png",
+    icon: searching,
     skills: [
       { skill: "Problem-solving", percentage: "81%" },
       { skill: "Collaboration", percentage: "75%" },
