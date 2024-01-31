@@ -11,7 +11,7 @@ function ContactForm() {
 
     try {
       const formData = new FormData(event.target);
-      formData.append("access_key", "1a356a93-543d-4b2d-b504-439a0f895015");
+      formData.append("access_key", "  1a356a93-543d-4b2d-b504-439a0f895015");
 
       const object = Object.fromEntries(formData);
       const json = JSON.stringify(object);
@@ -48,13 +48,17 @@ function ContactForm() {
       <form ref={formRef} onSubmit={onSubmit}>
         <div className="name-container">
           <input type="text" name="firstname" placeholder="Name" required />
-          {/* <input type="text" name="lastname" placeholder="Last name" required /> */}
         </div>
         <input type="text" name="email" placeholder="Email" required />
         <textarea name="message" placeholder="Message" rows={3} required />
         <button type="submit">Send</button>
       </form>
-      <ToastContainer className="modal-toast" />
+      <ToastContainer
+        draggablePercent={60}
+        autoClose={3000}
+        className="modal-toast"
+        limit={3}
+      />
     </div>
   );
 }

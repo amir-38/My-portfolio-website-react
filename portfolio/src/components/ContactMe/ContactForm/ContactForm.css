@@ -34,9 +34,11 @@ form button{
    transition: all 0.3s ease;
    cursor: pointer;
 }
-form button:hover{
+form button:hover ,
+form button:focus{
    color: #a892fe;
    background: transparent;
+
 }
 @media(max-width:450px){
    .name-container{
@@ -66,4 +68,10 @@ form button:hover{
       width: 18rem;
       /* height: 10rem; */
       margin:0 0 43rem 5rem;   }
+}
+@media (hover:hover){
+   form button:hover{
+      color: #a892fe;
+      background: transparent;
+   }
 }

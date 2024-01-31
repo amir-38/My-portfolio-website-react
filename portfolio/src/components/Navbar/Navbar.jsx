@@ -36,7 +36,7 @@ const Navbar = () => {
     if (section) {
       const sectionTop =
         section.getBoundingClientRect().top + window.pageYOffset - navbarHeight;
-      smoothScrollTo(sectionTop, 500);
+      smoothScrollTo(sectionTop, 400);
     }
   };
 
